@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Butterfly World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Butterfly World</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('main_index') }}">Home</a></li>
+                    <li><a href="{{ url_for('input_page') }}">Classify</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <blockquote>"Just when the caterpillar thought the world was over, it became a butterfly."</blockquote>
+            <p class="sub-quote">Love is like a butterfly. It goes where it pleases and it pleases wherever it goes.</p>
+            <a href="{{ url_for('input_page') }}" class="cta-button">Get Started</a>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Butterfly World. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

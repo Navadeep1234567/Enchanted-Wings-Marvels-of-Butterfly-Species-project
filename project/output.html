@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Butterfly World</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Classification Result</h2>
+        <div class="result">
+            <img src="{{ url_for('static', filename='images/' + user_image) }}" alt="Uploaded Image" width="300">
+            <p>Predicted: <strong>{{ label }}</strong></p>
+        </div>
+        <a href="{{ url_for('input_page') }}" class="cta-button">Classify Another</a>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Butterfly World. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
